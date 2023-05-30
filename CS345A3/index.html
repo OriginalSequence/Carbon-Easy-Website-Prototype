@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carbon Easy! (CE)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
+    .w3-bar-block .w3-bar-item {padding: 16px}
+    </style>
+</head>
+<body>
+
+<div class="custom-background-colour">
+    <div class="nav">
+        <a href="#home" class="w3-bar-item w3-button" onclick="unfinishedFeature()">Home</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="unfinishedFeature()">Calculator</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="unfinishedFeature()">About</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="unfinishedFeature()">FAQ</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="unfinishedFeature()">Contact</a>
+        <div class = "nav-user">
+            <a href="#register" id = 'trigger-modal' class="w3-bar-item w3-button" onclick="openRegister()">Register</a>
+            <a href="#" class="w3-bar-item w3-button" onclick="unfinishedFeature()">Login</a>
+        </div>
+    </div>
+</div>
+
+<header class="header-container" style="padding:110px 16px">
+    <div class = centre id = "container" >
+        <h1 class="main-text texts"><b>Welcome to Carbon Easy</b></h1>
+        <h2 class = "sub-main-text texts">Register to Calculate your Carbon Footprint</h2>
+        <button class = "register-button custom-background-colour" id = 'triggerModal' onclick="openRegister()"><span
+                style="font-size: larger; ">Register Now</span></button>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div id = "form-ct" class="modal-content">
+            <div class = "modal-header custom-background-colour">
+                <span class="close">&times;</span>
+                <h2 id = "form-header">Registration Form</h2>
+            </div>
+            <form id = "userForm">
+
+                <div id = "userInfo">
+                    <label>Given Name</label>
+                    <input type="text" placeholder="Sam"/><br>
+                    <label>Surname</label>
+                    <input type="text" placeholder="Doe"/><br>
+                    <label>Username</label>
+                    <input type="text" placeholder="SamDoe100"/><br>
+                    <label>Password</label>
+                    <input type="password"/><br>
+                </div>
+
+                <br>
+                <br>
+                <div id = "addressInfo">
+                    <label>Home Address</label>
+                    <input type="text" placeholder="10 Queen Street"/><br>
+                    <label>Work Address</label>
+                    <input type="text" placeholder="5 Southern Avenue"/><br>
+                </div>
+
+                <br>
+                <br>
+                <div id = "contactInfo">
+                    <label>Mobile Number</label>
+                    <input type="tel" placeholder="02173728564"/><br>
+                    <label>Email</label>
+                    <input type="email" placeholder="something@gmail.com"/><br>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button class = 'submit-button custom-background-colour' onclick="unfinishedFeature()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-64 w3-container grid">
+        <div class="w3-content">
+            <div class="w3-onethird">
+                <h1 class = custom-colour><b>What is Carbon Easy</b></h1>
+                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-64 w3-container grid">
+        <div class="w3-content">
+            <div class="w3-onethird">
+                <h1 class = custom-colour><b>How it works</b></h1>
+                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-padding-64 w3-container grid">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1 class = custom-colour><b>About</b></h1>
+                <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</h5>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w3-container w3-padding-64 w3-center footer">
+        <div class="w3-xlarge w3-padding-32">
+            <i class="fa fa-facebook-official w3-hover-opacity footer-icons" onclick="unfinishedFeature()"></i>
+            <i class="fa fa-instagram w3-hover-opacity footer-icons" onclick="unfinishedFeature()"></i>
+            <i class="fa fa-twitter w3-hover-opacity footer-icons" onclick="unfinishedFeature()"></i>
+            <i class="fa fa-linkedin w3-hover-opacity footer-icons" onclick="unfinishedFeature()"></i>
+        </div>
+    </footer>
+</body>
+<script src="register.js"></script>
+</html>
